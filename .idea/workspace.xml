@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4098f3b-31f0-4b59-8ca1-f3b886ef3270" name="Changes" comment="feat : Final FINAL Commit! HAHAHAHAHAHAH">
+    <list default="true" id="c4098f3b-31f0-4b59-8ca1-f3b886ef3270" name="Changes" comment="feat: removed form inputs, adjusted property ui.">
       <change afterPath="$PROJECT_DIR$/chatbot-deployment/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/chatbot-deployment/venv/Lib/site-packages/annotated_types-0.7.0.dist-info/INSTALLER" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/chatbot-deployment/venv/Lib/site-packages/annotated_types-0.7.0.dist-info/METADATA" afterDir="false" />
@@ -1863,26 +1863,18 @@
       <change afterPath="$PROJECT_DIR$/chatbot-deployment/venv/Scripts/pyrsa-priv2pub.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/chatbot-deployment/venv/Scripts/pyrsa-sign.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/chatbot-deployment/venv/Scripts/pyrsa-verify.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start-bot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gemini-api-php/client" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/php-http/discovery" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/http-client" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PhilipAndAurea.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PhilipAndAurea.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/propertyadd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/propertyadd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/propertyview.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/propertyview.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot-deployment" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-deployment" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot-deployment/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-deployment/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot-deployment/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-deployment/static/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot-deployment/vendor/google/apiclient-services" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot-deployment/vendor/google/apiclient-services" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot.php" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/propertydetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/propertydetail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1909,7 +1901,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="main" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/chatbot-deployment" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -1925,7 +1917,7 @@
     &quot;accountId&quot;: &quot;f48e8e2b-2712-4ac3-aae0-ad599c962f9f&quot;
   }
 }</component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
       <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
@@ -1960,6 +1952,7 @@
       <path value="$PROJECT_DIR$/chatbot-deployment/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
       <path value="$PROJECT_DIR$/vendor/gemini-api-php/client" />
+      <path value="$PROJECT_DIR$/vendor/stichoza/google-translate-php" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
@@ -1977,37 +1970,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JavaScript Debug.feature.php.executor": "Debug",
-    "JavaScript Debug.header.php.executor": "Run",
-    "JavaScript Debug.process-reply.php.executor": "Run",
-    "PHP Script.feature.php.executor": "Debug",
-    "PHP Script.header.php.executor": "Run",
-    "PHP Script.login.php.executor": "Debug",
-    "PHP Script.process-reply.php.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.chat.executor": "Run",
-    "Python.train.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "final__branch",
-    "last_opened_file_path": "C:/Users/acer/Downloads/PhilipAndAurea/admin",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;JavaScript Debug.feature.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.header.php.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.process-reply.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.feature.php.executor&quot;: &quot;Debug&quot;,
+    &quot;PHP Script.header.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.login.php.executor&quot;: &quot;Debug&quot;,
+    &quot;PHP Script.process-reply.php.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonre/Downloads/projects/laravel-app/act1/Toledo-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\acer\Downloads\PhilipAndAurea\admin" />
@@ -2048,7 +2041,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PS-243.26053.13" />
+        <option value="bundled-php-predefined-a98d8de5180a-1ec7b7818973-com.jetbrains.php.sharedIndexes-PS-243.26053.13" />
       </set>
     </attachedChunks>
   </component>
@@ -2105,6 +2099,10 @@
       <workItem from="1730440070877" duration="369000" />
       <workItem from="1730441334285" duration="468000" />
       <workItem from="1730503963600" duration="4035000" />
+      <workItem from="1743766748279" duration="2171000" />
+      <workItem from="1743772441627" duration="61000" />
+      <workItem from="1743937233393" duration="3372000" />
+      <workItem from="1743940633293" duration="295000" />
     </task>
     <task id="LOCAL-00001" summary="feat : on-going automated reminders feature. First Commit">
       <option name="closed" value="true" />
@@ -2195,6 +2193,7 @@
     <MESSAGE value="feat : Added Schedule Event option and Inbox for admin." />
     <MESSAGE value="feat : Final Commit! ewan bahala na HAHAHAHAH" />
     <MESSAGE value="feat : Final FINAL Commit! HAHAHAHAHAHAH" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : Final FINAL Commit! HAHAHAHAHAHAH" />
+    <MESSAGE value="feat: removed form inputs, adjusted property ui." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: removed form inputs, adjusted property ui." />
   </component>
 </project>

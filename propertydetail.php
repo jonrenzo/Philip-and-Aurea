@@ -141,8 +141,10 @@ include("config.php");
                             <button onclick="toLogin()">Request a tour</button>
                             <button onclick="toLogin()" id="myContact">Contact Us</button>
                         </div>
+
                         <?php } ?>
                         <div class="property-details">
+                            <!--
                             <div class="bg-gray property-quantity px-4 pt-4 w-100">
                                 <ul>
                                     <li><span class="text-secondary"><?php echo $row['12'];?></span> Sqft</li>
@@ -153,9 +155,10 @@ include("config.php");
                                     <li><span class="text-secondary"><?php echo $row['9'];?></span> Kitchen</li>
                                 </ul>
                             </div>
+                            -->
                             <h4 class="text-secondary my-4">Description</h4>
                             <p><?php echo $row['2'];?></p>
-                            
+                            <!--
                             <h5 class="mt-5 mb-4 text-secondary">Property Summary</h5>
                             <div  class="table-striped font-14 pb-2">
                                 <table class="w-100">
@@ -182,24 +185,15 @@ include("config.php");
                                     </tbody>
                                 </table>
                             </div>
-                            <h5 class="mt-5 mb-4 text-secondary">Features</h5>
-                            <div class="row">
-								<?php echo $row['17'];?>
-								
-                            </div>   
-							
+                            -->
+							<!--
                             <h5 class="mt-5 mb-4 text-secondary">Floor Plans</h5>
                             <div class="accordion" id="accordionExample">
                                 <button class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Floor Plans </button>
                                 <div id="collapseOne" class="collapse show p-4" aria-labelledby="headingOne" data-parent="#accordionExample">
                                     <img src="admin/property/<?php echo $row['25'];?>" alt="Not Available"> </div>
-                                <button class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Basement Floor</button>
-                                <div id="collapseTwo" class="collapse p-4" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                    <img src="admin/property/<?php echo $row['26'];?>" alt="Not Available"> </div>
-                                <button class="bg-gray hover-bg-primary hover-text-white text-ordinary py-3 px-4 mb-1 w-100 text-left rounded position-relative collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Ground Floor</button>
-                                <div id="collapseThree" class="collapse p-4" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <img src="admin/property/<?php echo $row['27'];?>" alt="Not Available"> </div>
                             </div>
+                            -->
 
                             
                         </div>

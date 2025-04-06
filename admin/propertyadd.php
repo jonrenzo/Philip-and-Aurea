@@ -1,8 +1,8 @@
 <?php
-session_start();
+
 require("config.php");
 ////code
- 
+session_start();
 if(!isset($_SESSION['auser']))
 {
 	header("location:index.php");
@@ -18,24 +18,25 @@ if(isset($_POST['add']))
 	$title=$_POST['title'];
 	$content=$_POST['content'];
 	$ptype=$_POST['ptype'];
-	$bhk=$_POST['bhk'];
-	$bed=$_POST['bed'];
-	$balc=$_POST['balc'];
-	$hall=$_POST['hall'];
-	$stype=$_POST['stype'];
-	$bath=$_POST['bath'];
-	$kitc=$_POST['kitc'];
-	$floor=$_POST['floor'];
+
+//	$bhk=$_POST['bhk'];
+//	$bed=$_POST['bed'];
+//	$balc=$_POST['balc'];
+//	$hall=$_POST['hall'];
+//	$stype=$_POST['stype'];
+//	$bath=$_POST['bath'];
+//	$kitc=$_POST['kitc'];
+//	$floor=$_POST['floor'];
 	$price=$_POST['price'];
-	$city=$_POST['city'];
-	$asize=$_POST['asize'];
-	$loc=$_POST['loc'];
-	$state=$_POST['state'];
+//	$city=$_POST['city'];
+//	$asize=$_POST['asize'];
+//	$loc=$_POST['loc'];
+//	$state=$_POST['state'];
 	$status=$_POST['status'];
 	
-	$feature=$_POST['feature'];
+//	$feature=$_POST['feature'];
 	
-	$totalfloor=$_POST['totalfl'];
+//	$totalfloor=$_POST['totalfl'];
 	
 	$aimage=$_FILES['aimage']['name'];
 	$aimage1=$_FILES['aimage1']['name'];
@@ -43,7 +44,7 @@ if(isset($_POST['add']))
 	$aimage3=$_FILES['aimage3']['name'];
 	$aimage4=$_FILES['aimage4']['name'];
 	
-	$fimage=$_FILES['fimage']['name'];
+//	$fimage=$_FILES['fimage']['name'];
 	$fimage1=$_FILES['fimage1']['name'];
 	$fimage2=$_FILES['fimage2']['name'];
 
@@ -55,7 +56,7 @@ if(isset($_POST['add']))
 	$temp_name3 =$_FILES['aimage3']['tmp_name'];
 	$temp_name4 =$_FILES['aimage4']['tmp_name'];
 	
-	$temp_name5 =$_FILES['fimage']['tmp_name'];
+	//$temp_name5 =$_FILES['fimage']['tmp_name'];
 	$temp_name6 =$_FILES['fimage1']['tmp_name'];
 	$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
@@ -65,13 +66,12 @@ if(isset($_POST['add']))
 	move_uploaded_file($temp_name3,"property/$aimage3");
 	move_uploaded_file($temp_name4,"property/$aimage4");
 	
-	move_uploaded_file($temp_name5,"property/$fimage");
+//	move_uploaded_file($temp_name5,"property/$fimage");
 	move_uploaded_file($temp_name6,"property/$fimage1");
 	move_uploaded_file($temp_name7,"property/$fimage2");
 	
-	$sql="INSERT INTO property (title,pcontent,type,bhk,stype,bedroom,bathroom,balcony,kitchen,hall,floor,size,price,location,city,state,feature,pimage,pimage1,pimage2,pimage3,pimage4,status,mapimage,topmapimage,groundmapimage,totalfloor,isFeatured)
-	VALUES('$title','$content','$ptype','$bhk','$stype','$bed','$bath','$balc','$kitc','$hall','$floor','$asize','$price',
-	'$loc','$city','$state','$feature','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$status','$fimage','$fimage1','$fimage2','$totalfloor','$isFeatured')";
+	$sql="INSERT INTO property (title,pcontent,status,price,pimage,pimage1,pimage2,pimage3,pimage4,topmapimage,groundmapimage,isFeatured)
+	VALUES('$title','$content','$status','$price','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$fimage1','$fimage2','$isFeatured')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -147,23 +147,29 @@ if(isset($_POST['add']))
 									<h5 class="card-title">Property Detail</h5>
 									<?php echo $error; ?>
 									<?php echo $msg; ?>
-									
+
 										<div class="row">
 											<div class="col-xl-12">
 												<div class="form-group row">
-													<label class="col-lg-2 col-form-label">Title</label>
+													<label class="col-lg-2 col-form-label">Title<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input type="text" class="form-control" name="title" required placeholder="Enter Title">
 													</div>
 												</div>
+                                                <div class="form-group row">
+                                                    <label class="col-lg-2 col-form-label">Price<span style="color: red">*</span></label>
+                                                    <div class="col-lg-9">
+                                                        <input type="number" class="form-control" name="price" required placeholder="Enter Price">
+                                                    </div>
+                                                </div>
 												<div class="form-group row">
-													<label class="col-lg-2 col-form-label">Content</label>
+													<label class="col-lg-2 col-form-label">Content<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<textarea class="tinymce form-control" name="content" rows="10" cols="30"></textarea>
 													</div>
 												</div>
-												
 											</div>
+                                            <!--
 											<div class="col-xl-6">
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Property Type</label>
@@ -240,8 +246,12 @@ if(isset($_POST['add']))
 												</div>
 												
 											</div>
+                                            -->
 										</div>
-										<h4 class="card-title">Price & Location</h4>
+
+
+										<!--<h4 class="card-title">Price & Location</h4>-->
+                                    <!--
 										<div class="row">
 											<div class="col-xl-6">
 												<div class="form-group row">
@@ -257,126 +267,43 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Price</label>
-													<div class="col-lg-9">
-														<input type="text" class="form-control" name="price" required placeholder="Enter Price">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">City</label>
-													<div class="col-lg-9">
-														<input type="text" class="form-control" name="city" required placeholder="Enter City">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">State</label>
-													<div class="col-lg-9">
-														<input type="text" class="form-control" name="state" required placeholder="Enter State">
-													</div>
-												</div>
 											</div>
+
 											<div class="col-xl-6">
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Total Floor</label>
-													<div class="col-lg-9">
-														<select class="form-control" required name="totalfl">
-															<option value="">Select Floor</option>
-															<option value="1 Floor">1 Floor</option>
-															<option value="2 Floor">2 Floor</option>
-															<option value="3 Floor">3 Floor</option>
-															<option value="4 Floor">4 Floor</option>
-															<option value="5 Floor">5 Floor</option>
-															<option value="6 Floor">6 Floor</option>
-															<option value="7 Floor">7 Floor</option>
-															<option value="8 Floor">8 Floor</option>
-															<option value="9 Floor">9 Floor</option>
-															<option value="10 Floor">10 Floor</option>
-															<option value="11 Floor">11 Floor</option>
-															<option value="12 Floor">12 Floor</option>
-															<option value="13 Floor">13 Floor</option>
-															<option value="14 Floor">14 Floor</option>
-															<option value="15 Floor">15 Floor</option>
-														</select>
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Area Size</label>
-													<div class="col-lg-9">
-														<input type="text" class="form-control" name="asize" required placeholder="Enter Area Size (in sqrt)">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Address</label>
-													<div class="col-lg-9">
-														<input type="text" class="form-control" name="loc" required placeholder="Enter Address">
-													</div>
-												</div>
-												
+                                                <div class="form-group row">
+                                                    <label class="col-lg-3 col-form-label">Price</label>
+                                                    <div class="col-lg-9">
+                                                        <input type="text" class="form-control" name="price" required placeholder="Enter Price">
+                                                    </div>
+                                                </div>
 											</div>
 										</div>
-										
-										<div class="form-group row">
-											<label class="col-lg-2 col-form-label">Feature</label>
-											<div class="col-lg-9">
-											<p class="alert alert-danger">* Important Please Do Not Remove Below Content Only Change <b>Yes</b> Or <b>No</b> or Details and Do Not Add More Details</p>
-											
-											<textarea class="tinymce form-control" name="feature" rows="10" cols="30">
-												<!---feature area start--->
-												<div class="col-md-4">
-														<ul>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Property Age : </span>10 Years</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Swiming Pool : </span>Yes</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Parking : </span>Yes</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">GYM : </span>Yes</li>
-														</ul>
-													</div>
-													<div class="col-md-4">
-														<ul>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Type : </span>Apartment</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Security : </span>Yes</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Dining Capacity : </span>10 People</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Church/Temple  : </span>No</li>
-														
-														</ul>
-													</div>
-													<div class="col-md-4">
-														<ul>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">3rd Party : </span>No</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Alivator : </span>Yes</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">CCTV : </span>Yes</li>
-														<li class="mb-3"><span class="text-secondary font-weight-bold">Water Supply : </span>Ground Water / Tank</li>
-														</ul>
-													</div>
-												<!---feature area end---->
-											</textarea>
-											</div>
-										</div>
-												
+                                        -->
+
 										<h4 class="card-title">Image & Status</h4>
 										<div class="row">
 											<div class="col-xl-6">
 												
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image</label>
+                                                    <label class="col-lg-3 col-form-label">Image<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input class="form-control" name="aimage" type="file" required="">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 2</label>
+													<label class="col-lg-3 col-form-label">Image 2<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input class="form-control" name="aimage2" type="file" required="">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 4</label>
+													<label class="col-lg-3 col-form-label">Image 4<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input class="form-control" name="aimage4" type="file" required="">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Status</label>
+													<label class="col-lg-3 col-form-label">Status<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<select class="form-control"  required name="status">
 															<option value="">Select Status</option>
@@ -385,36 +312,38 @@ if(isset($_POST['add']))
 														</select>
 													</div>
 												</div>
+                                                <!--
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Basement Floor Plan Image</label>
 													<div class="col-lg-9">
 														<input class="form-control" name="fimage1" type="file">
 													</div>
 												</div>
+												-->
 											</div>
 											<div class="col-xl-6">
 												
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 1</label>
+													<label class="col-lg-3 col-form-label">Image 1<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input class="form-control" name="aimage1" type="file" required="">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">image 3</label>
+													<label class="col-lg-3 col-form-label">image 3<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input class="form-control" name="aimage3" type="file" required="">
 													</div>
 												</div>
 												
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Floor Plan Image</label>
+													<label class="col-lg-3 col-form-label">Floor Plan Image<span style="color: red">*</span></label>
 													<div class="col-lg-9">
-														<input class="form-control" name="fimage" type="file">
+														<input class="form-control" name="fimage1" type="file">
 													</div>
 												</div>
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Ground Floor Plan Image</label>
+													<label class="col-lg-3 col-form-label">Ground Floor Plan Image<span style="color: red">*</span></label>
 													<div class="col-lg-9">
 														<input class="form-control" name="fimage2" type="file">
 													</div>
@@ -427,7 +356,7 @@ if(isset($_POST['add']))
 										<div class="row">
 											<div class="col-md-6">
 												<div class="form-group row">
-													<label class="col-lg-3 col-form-label"><b>Is Featured?</b></label>
+													<label class="col-lg-3 col-form-label"><b>Is Featured?<span style="color: red">*</span></b></label>
 													<div class="col-lg-9">
 														<select class="form-control"  required name="isFeatured">
 															<option value="">Select...</option>

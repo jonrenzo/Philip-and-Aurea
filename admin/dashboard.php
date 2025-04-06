@@ -283,35 +283,9 @@ $propertyDataJSON = json_encode($propertyData);
 								</div>
 							</div>
 						</div>
-
 					</div>
 
-
 					<div class="row">
-					<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="dash-widget-header">
-										<span class="dash-widget-icon bg-info">
-											<i class="fe fe-home"></i>
-										</span>
-										
-									</div>
-									<div class="dash-widget-info">
-										
-									<h3><?php $sql = "SELECT * FROM property where type = 'house'";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
-										
-										<h6 class="text-muted">No. of Houses</h6>
-										<div class="progress progress-sm">
-											<div class="progress-bar bg-info w-50"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
 						<div class="col-xl-3 col-sm-6 col-12">
 							<div class="card">
 								<div class="card-body">
@@ -383,34 +357,32 @@ $propertyDataJSON = json_encode($propertyData);
 								</div>
 							</div>
 						</div>
-						
-					</div>
 
-					<div class="row">
-						<div class="col-xl-3 col-sm-6 col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="dash-widget-header">
+                        <div class="col-xl-3 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="dash-widget-header">
 										<span class="dash-widget-icon bg-info">
 											<i class="fe fe-comment"></i>
 										</span>
-										
-									</div>
-									<div class="dash-widget-info">
-										
-									<h3><?php $sql = "SELECT * FROM events";
-										$query = $con->query($sql);
-                						echo "$query->num_rows";?></h3>
-										
-										<h6 class="text-muted">Schedule</h6>
-										<div class="progress progress-sm">
-											<div class="progress-bar bg-info w-50"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+
+                                    </div>
+                                    <div class="dash-widget-info">
+
+                                        <h3><?php $sql = "SELECT * FROM events";
+                                            $query = $con->query($sql);
+                                            echo "$query->num_rows";?></h3>
+
+                                        <h6 class="text-muted">Schedule</h6>
+                                        <div class="progress progress-sm">
+                                            <div class="progress-bar bg-info w-50"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					</div>
+
 <!-- 
 
 					<div class="row">

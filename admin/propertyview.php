@@ -87,13 +87,14 @@ if(!isset($_SESSION['auser']))
                                                 <tr>
                                                     <th>P ID</th>
                                                     <th>Title</th>
+                                                    <th>Price</th>
+                                                    <!--
                                                     <th>Type</th>
                                                     <th>BHK</th>
                                                     <th>S/R</th>
-                                                   
 													<th>Area</th>
-                                                    <th>Price</th>
                                                     <th>Location</th>
+                                                    -->
 													<th>Status</th>
                                                    
                                                     
@@ -115,13 +116,15 @@ if(!isset($_SESSION['auser']))
                                                 <tr>
                                                     <td><?php echo $row['0']; ?></td>
                                                     <td><?php echo $row['1']; ?></td>
+                                                    <td><?php echo $row['13']; ?></td>
+
+                                                    <!--
                                                     <td><?php echo $row['3']; ?></td>
                                                     <td><?php echo $row['4']; ?></td>
                                                     <td><?php echo $row['5']; ?></td>
-                                                   
                                                     <td><?php echo $row['12']; ?></td>
-                                                    <td><?php echo $row['13']; ?></td>
                                                     <td><?php echo $row['14']; ?></td>
+                                                    -->
 													
                                                    
                                                     <td><?php echo $row['24']; ?></td>
