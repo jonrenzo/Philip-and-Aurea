@@ -23,7 +23,7 @@ if(isset($_POST['add']))
 //	$bed=$_POST['bed'];
 //	$balc=$_POST['balc'];
 //	$hall=$_POST['hall'];
-//	$stype=$_POST['stype'];
+	$stype='rent';
 //	$bath=$_POST['bath'];
 //	$kitc=$_POST['kitc'];
 //	$floor=$_POST['floor'];
@@ -70,8 +70,8 @@ if(isset($_POST['add']))
 	move_uploaded_file($temp_name6,"property/$fimage1");
 	move_uploaded_file($temp_name7,"property/$fimage2");
 	
-	$sql="INSERT INTO property (title,pcontent,status,price,pimage,pimage1,pimage2,pimage3,pimage4,topmapimage,groundmapimage,isFeatured)
-	VALUES('$title','$content','$status','$price','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$fimage1','$fimage2','$isFeatured')";
+	$sql="INSERT INTO property (title,pcontent,stype,status,price,pimage,pimage1,pimage2,pimage3,pimage4,topmapimage,groundmapimage,isFeatured)
+	VALUES('$title','$content','$stype','$status','$price','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$fimage1','$fimage2','$isFeatured')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
