@@ -42,11 +42,11 @@ if(isset($_POST['add']))
 	$aimage1=$_FILES['aimage1']['name'];
 	$aimage2=$_FILES['aimage2']['name'];
 	$aimage3=$_FILES['aimage3']['name'];
-	$aimage4=$_FILES['aimage4']['name'];
+//	$aimage4=$_FILES['aimage4']['name'];
 	
 //	$fimage=$_FILES['fimage']['name'];
-	$fimage1=$_FILES['fimage1']['name'];
-	$fimage2=$_FILES['fimage2']['name'];
+//	$fimage1=$_FILES['fimage1']['name'];
+//	$fimage2=$_FILES['fimage2']['name'];
 
 	$isFeatured=$_POST['isFeatured'];
 	
@@ -54,24 +54,24 @@ if(isset($_POST['add']))
 	$temp_name1 =$_FILES['aimage1']['tmp_name'];
 	$temp_name2 =$_FILES['aimage2']['tmp_name'];
 	$temp_name3 =$_FILES['aimage3']['tmp_name'];
-	$temp_name4 =$_FILES['aimage4']['tmp_name'];
+//	$temp_name4 =$_FILES['aimage4']['tmp_name'];
 	
 	//$temp_name5 =$_FILES['fimage']['tmp_name'];
-	$temp_name6 =$_FILES['fimage1']['tmp_name'];
-	$temp_name7 =$_FILES['fimage2']['tmp_name'];
+//	$temp_name6 =$_FILES['fimage1']['tmp_name'];
+//	$temp_name7 =$_FILES['fimage2']['tmp_name'];
 	
 	move_uploaded_file($temp_name,"property/$aimage");
 	move_uploaded_file($temp_name1,"property/$aimage1");
 	move_uploaded_file($temp_name2,"property/$aimage2");
 	move_uploaded_file($temp_name3,"property/$aimage3");
-	move_uploaded_file($temp_name4,"property/$aimage4");
+//	move_uploaded_file($temp_name4,"property/$aimage4");
 	
 //	move_uploaded_file($temp_name5,"property/$fimage");
-	move_uploaded_file($temp_name6,"property/$fimage1");
-	move_uploaded_file($temp_name7,"property/$fimage2");
+//	move_uploaded_file($temp_name6,"property/$fimage1");
+//	move_uploaded_file($temp_name7,"property/$fimage2");
 	
-	$sql="INSERT INTO property (title,pcontent,stype,status,price,pimage,pimage1,pimage2,pimage3,pimage4,topmapimage,groundmapimage,isFeatured)
-	VALUES('$title','$content','$stype','$status','$price','$aimage','$aimage1','$aimage2','$aimage3','$aimage4','$fimage1','$fimage2','$isFeatured')";
+	$sql="INSERT INTO property (title,pcontent,stype,status,price,pimage,pimage1,pimage2,pimage3,isFeatured)
+	VALUES('$title','$content','$stype','$status','$price','$aimage','$aimage1','$aimage2','$aimage3','$isFeatured')";
 	$result=mysqli_query($con,$sql);
 	if($result)
 		{
@@ -296,12 +296,12 @@ if(isset($_POST['add']))
 														<input class="form-control" name="aimage2" type="file" required="">
 													</div>
 												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Image 4<span style="color: red">*</span></label>
-													<div class="col-lg-9">
-														<input class="form-control" name="aimage4" type="file" required="">
-													</div>
-												</div>
+<!--												<div class="form-group row">-->
+<!--													<label class="col-lg-3 col-form-label">Image 4<span style="color: red">*</span></label>-->
+<!--													<div class="col-lg-9">-->
+<!--														<input class="form-control" name="aimage4" type="file" required="">-->
+<!--													</div>-->
+<!--												</div>-->
 												<div class="form-group row">
 													<label class="col-lg-3 col-form-label">Status<span style="color: red">*</span></label>
 													<div class="col-lg-9">
@@ -335,19 +335,19 @@ if(isset($_POST['add']))
 														<input class="form-control" name="aimage3" type="file" required="">
 													</div>
 												</div>
-												
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Floor Plan Image<span style="color: red">*</span></label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage1" type="file">
-													</div>
-												</div>
-												<div class="form-group row">
-													<label class="col-lg-3 col-form-label">Ground Floor Plan Image<span style="color: red">*</span></label>
-													<div class="col-lg-9">
-														<input class="form-control" name="fimage2" type="file">
-													</div>
-												</div>
+<!--												-->
+<!--												<div class="form-group row">-->
+<!--													<label class="col-lg-3 col-form-label">Floor Plan Image<span style="color: red">*</span></label>-->
+<!--													<div class="col-lg-9">-->
+<!--														<input class="form-control" name="fimage1" type="file">-->
+<!--													</div>-->
+<!--												</div>-->
+<!--												<div class="form-group row">-->
+<!--													<label class="col-lg-3 col-form-label">Ground Floor Plan Image<span style="color: red">*</span></label>-->
+<!--													<div class="col-lg-9">-->
+<!--														<input class="form-control" name="fimage2" type="file">-->
+<!--													</div>-->
+<!--												</div>-->
 											</div>
 										</div>
 

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4098f3b-31f0-4b59-8ca1-f3b886ef3270" name="Changes" comment="feat: removed form inputs, adjusted property ui.">
+    <list default="true" id="c4098f3b-31f0-4b59-8ca1-f3b886ef3270" name="Changes" comment="feat: updated &quot;for rent&quot; option">
+      <change afterPath="$PROJECT_DIR$/admin/property/386592f2-48a1-4f78-8def-a4ddc304e3ae.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/property/725fe631-cd34-4421-82f4-ff0155b46f54.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/property/8568d33e-e852-432a-947c-90ec9dd31e96.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/property/904aede5-16d7-4837-9e0e-bb77fc335aa3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/property/fd7cc22c-402c-439f-94d5-c42c05ef76ae.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATABASE FILE/realestatephp.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DATABASE FILE/realestatephp.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/propertyadd.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/propertyadd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/property.php" beforeDir="false" afterPath="$PROJECT_DIR$/property.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +43,6 @@
     <option name="RECENT_COMMON_BRANCH" value="main" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -43,12 +50,12 @@
     &quot;assignee&quot;: &quot;jonrenzo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jonrenzo/Philip-and-Aurea.git",
-    "accountId": "27d5a98c-0f63-4d0e-aad2-67ec667f47f8"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jonrenzo/Philip-and-Aurea.git&quot;,
+    &quot;accountId&quot;: &quot;27d5a98c-0f63-4d0e-aad2-67ec667f47f8&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
@@ -102,38 +109,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JavaScript Debug.feature.php.executor": "Debug",
-    "JavaScript Debug.header.php.executor": "Run",
-    "JavaScript Debug.process-reply.php.executor": "Run",
-    "PHP Script.feature.php.executor": "Debug",
-    "PHP Script.header.php.executor": "Run",
-    "PHP Script.login.php.executor": "Debug",
-    "PHP Script.process-reply.php.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.chat.executor": "Run",
-    "Python.train.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/jonre/Downloads/testenv/Philip-and-Aurea",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;JavaScript Debug.feature.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.header.php.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.process-reply.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.feature.php.executor&quot;: &quot;Debug&quot;,
+    &quot;PHP Script.header.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP Script.login.php.executor&quot;: &quot;Debug&quot;,
+    &quot;PHP Script.process-reply.php.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chat.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jonre/Downloads/testenv/request-response-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\acer\Downloads\PhilipAndAurea\admin" />
@@ -238,7 +245,8 @@
       <workItem from="1743940633293" duration="295000" />
       <workItem from="1744160179878" duration="636000" />
       <workItem from="1744203883397" duration="72000" />
-      <workItem from="1745628108027" duration="943000" />
+      <workItem from="1745628108027" duration="1856000" />
+      <workItem from="1745756899180" duration="2010000" />
     </task>
     <task id="LOCAL-00001" summary="feat : on-going automated reminders feature. First Commit">
       <option name="closed" value="true" />
@@ -288,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730429032533</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: updated &quot;for rent&quot; option">
+      <option name="closed" value="true" />
+      <created>1745629149375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745629149375</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +346,7 @@
     <MESSAGE value="feat : Final Commit! ewan bahala na HAHAHAHAH" />
     <MESSAGE value="feat : Final FINAL Commit! HAHAHAHAHAHAH" />
     <MESSAGE value="feat: removed form inputs, adjusted property ui." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: removed form inputs, adjusted property ui." />
+    <MESSAGE value="feat: updated &quot;for rent&quot; option" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: updated &quot;for rent&quot; option" />
   </component>
 </project>

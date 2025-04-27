@@ -118,24 +118,17 @@ include('start-bot.php');
                     </div>
                 </div>
                 <div class="text-box-one">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6">
-                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-rent text-primary flat-medium" aria-hidden="true"></i>
-                                <h4 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Buy a home</a></h4>
-                                <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s"> 
-								<i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
+                            <div class="p-4 text-center hover-bg-white hover-shadow rounded mb-4 transation-3s">
+                                <i class="flaticon-for-rent text-primary flat-medium" aria-hidden="true"></i>
                                 <h4 class="text-secondary hover-text-primary py-3 m-0"><a href="#">Rent a home</a></h4>
                                 <p>We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.</p>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
+
             </div>
         </div>
 		<!-----  Our Services  ---->
